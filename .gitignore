@@ -1,0 +1,7 @@
+ssh-key
+ssh-key.pub
+terraform.tfstate
+.terraform*
+**/.terraform*
+terraform.tfstate*
+*.hcl
