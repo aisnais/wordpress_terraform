@@ -62,6 +62,11 @@ variable wordpress_sg_cidr_blocks {
   type        = list(string)
 }
 
+variable instance_ami {
+  type        = string
+}
+
+
 variable instance_type {
   type        = string
 }

@@ -39,6 +39,7 @@ module network_server {
   }
   wordpress_sg_protocol = "tcp"
   wordpress_sg_cidr_blocks = ["0.0.0.0/0"]
+  instance_ami = "ami-0cf10cdf9fcd62d37"
   instance_type = "t2.micro"
   pub_ip_address = true
   instance_tag = "wordpress_ec2"

@@ -94,7 +94,7 @@ resource "aws_key_pair" "my-key" {
 }
 
 resource "aws_instance" "wordpress_ec2" {
-  ami = "ami-0cf10cdf9fcd62d37"
+  ami = var.instance_ami
   instance_type = var.instance_type 
   vpc_security_group_ids = [aws_security_group.wordpress-sg.id]
   subnet_id = aws_subnet.pub-subnet["pub_sub1"].id
